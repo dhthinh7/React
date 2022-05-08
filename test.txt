@@ -1,2 +1,7 @@
 test
+<<<<<<< HEAD
 changing in main repo
+=======
+
+tesq 2
+>>>>>>> layout1
