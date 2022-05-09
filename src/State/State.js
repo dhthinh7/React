@@ -14,7 +14,7 @@ export default class State extends Component {
 
   login = ()=>{
     let newState = {
-      status : "thinh"
+      status : true
     }
     // setState is asyn method
     // setState assign new state
