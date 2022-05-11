@@ -5,7 +5,8 @@ import './App.css';
 // import DataBindingRFC from './DataBinding/DataBindingRFC';
 // import HandleEvent from './HandleEvent/HandleEvent';
 // import RederCondition from './RederingCondition/RederCondition';
-import State from './State/State';
+// import State from './State/State';
+import ChooseCar from './ChoseCarEx/ChooseCar';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <DataBindingRFC/> */}
       {/* <HandleEvent/> */}
       {/* <RederCondition/> */}
-      <State/>
+      {/* <State/> */}
+      <ChooseCar/>
     </div>
   );
 }
