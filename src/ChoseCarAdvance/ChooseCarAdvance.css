@@ -1,0 +1,16 @@
+.myname{
+  color: red;
+  background-color: black;
+  font-size: 2rem;
+
+}
+.car-area{
+  /* width: 100%; */
+}
+.card-header-manual{
+  color: black;
+  font-weight: bold;
+}
+.table-manual, .table-manual>tr{
+  border: 2px solid black;
+}
