@@ -1,9 +1,11 @@
 import './App.css';
-import ExcerciseCar from './ExerciseCar/ExcerciseCar';
+import BaiTapXucXac from './BaiTapXucXac/BaiTapXucXac';
+// import ExcerciseCar from './ExerciseCar/ExcerciseCar';
 
 function App() {
   return (
-    <ExcerciseCar/>
+    // <ExcerciseCar/>
+    <BaiTapXucXac/>
   );
 }
 

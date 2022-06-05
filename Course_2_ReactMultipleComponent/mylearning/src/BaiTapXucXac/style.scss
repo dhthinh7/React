@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'fontGame';
+  src: url('./font/Pony.ttf');
+}
+
+*{
+  font-family: fontGame;
+}
+
+.game {
+  background-image: url("../../public/img/gameXucXac/bgGame.png");
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  
+  .game-tittle {
+    text-transform: uppercase;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .game-row{
+    .col-4 {
+      text-align: center;
+      button {
+        padding: 40px;
+        border-radius: 10px;
+      }
+      button:hover{
+        background-color: green;
+      }
+    }
+  }
+
+  .game-information{
+    text-align: center;
+    margin-top: 15vh;
+  }
+}
