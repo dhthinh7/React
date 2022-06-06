@@ -20,19 +20,25 @@
     text-align: center;
     font-size: 2rem;
   }
-
   .game-row{
     .col-4 {
       text-align: center;
       button {
         padding: 40px;
         border-radius: 10px;
+        transition: background-color .5s ease-in-out;
       }
       button:hover{
         background-color: green;
       }
+      .game-xucXac{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
+
 
   .game-information{
     text-align: center;
