@@ -1,0 +1,28 @@
+.burgerOrder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.burger {
+  position: relative;
+  flex: 0 0 60%;
+}
+
+.order {
+  flex: 0 0 40%;
+}
+
+.orderTable {
+  width: 100%;
+}
+
+table, th, td {
+  border-bottom: 1px solid red;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
