@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 class XucXac extends Component {
     
-    renderXucXac = ()=> {
+    renderXucXac = () => {
         let {mangXucXac} = this.props;
         //Lấy props từ reducer về
         return mangXucXac.map((xucXac,index)=>{

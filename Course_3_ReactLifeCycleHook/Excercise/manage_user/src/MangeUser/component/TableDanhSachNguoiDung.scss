@@ -1,0 +1,33 @@
+.listUser {
+  .listUserTable {
+    table {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      border-spacing: 0px;
+
+      th {
+        border-top: 1px solid red;
+      }
+
+      td {
+        cursor: pointer;
+      }
+
+      th, td {
+        vertical-align: bottom;
+        text-align: start;
+        padding: .5rem;
+        border-bottom: 1px solid red;
+      }
+      tbody tr{
+        transition: background-color .2s;
+      }
+      .handleChange, .handleChange:hover {
+        background-color: gainsboro
+      }
+    }
+  }
+}

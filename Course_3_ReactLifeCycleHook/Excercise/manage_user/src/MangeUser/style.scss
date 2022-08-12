@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+.main{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.formHeader {
+  background-color: #3f4442;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  &:hover{
+    cursor: pointer;
+  }
+}
