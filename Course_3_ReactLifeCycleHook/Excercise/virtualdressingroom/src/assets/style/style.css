@@ -1,0 +1,220 @@
+.well h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.well .card {
+  background-color: #eff1f1;
+}
+
+/* USER PROFILE PAGE */
+
+/*BEGIN TAB*/
+.card {
+  padding: 30px;
+  background-color: rgba(214, 224, 226, 0.2);
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* BEGIN MODEL */
+.contain {
+  width: 460px;
+  height: 590px;
+  margin: 0 auto;
+  position: relative;
+}
+.body {
+  width: 250px;
+  height: 500px;
+  background: url("../../../public/assets/images/allbody/bodynew.png");
+  position: absolute;
+  top: 12%;
+  left: 22%;
+}
+.bikinitop {
+  width: 250px;
+  height: 500px;
+  background: url("../../../public/assets/images/allbody/bikini_branew.png");
+  position: absolute;
+  top: 12%;
+  left: 22%;
+  z-index: 1;
+}
+
+.bikinibottom {
+  width: 250px;
+  height: 500px;
+  background: url("../../../public/assets/images/allbody/bikini_pantsnew.png");
+  position: absolute;
+  top: 12%;
+  left: 22%;
+  z-index: 1;
+}
+
+.model {
+  width: 60px;
+  height: 77px;
+  background: url("../../../public/assets/images/model/1000new.png");
+  position: absolute;
+  top: 5%;
+  left: 45.5%;
+  z-index: 1;
+}
+
+.handbag {
+  width: 500px;
+  height: 1000px;
+  background: url("../../../public/assets/images/handbags/handbag1.png");
+  position: absolute;
+  bottom: -39.5%;
+  right: -3.5%;
+  transform: scale(0.5);
+  z-index: 4;
+}
+
+.necklace, .topClothes {
+  width: 500px;
+  height: 1000px;
+  /* background: url("../../../public/assets/images/necklaces/necklace1.png"); */
+  position: absolute;
+  bottom: -40%;
+  right: -3.5%;
+  transform: scale(0.5);
+  z-index: 5;
+}
+
+.topClothes {
+  bottom: -39%;
+
+  /* background: url('../../../public/assets/images/clothes/topcloth1.png'); */
+}
+
+.bottomClothes {
+  width: 500px;
+  height: 1000px;
+  background: url("../../../public/assets/images/clothes/botcloth1.png");
+  position: absolute;
+  bottom: -40%;
+  right: -3.5%;
+  transform: scale(0.5);
+  z-index: 4;
+}
+
+.hairstyle {
+  width: 1000px;
+  background: url("../../../public/assets/images/hairstyle/hairstyle3.png");
+  height: 1000px;
+  position: absolute;
+  top: -75%;
+  right: -57%;
+  transform: scale(0.17);
+  z-index: 4;
+}
+
+.feet {
+  width: 500px;
+  height: 1000px;
+  /* background: url("../../../public/assets/images/shoes/shoes1.png"); */
+  position: absolute;
+  bottom: -37%;
+  right: -3.5%;
+  transform: scale(0.5);
+  z-index: 1;
+}
+
+.background {
+  width: 900px;
+  height: 1150px;
+  background-image: url(../../../public/assets/images/background/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -46%;
+  right: -50%;
+  transform: scale(0.5);
+  z-index: -1;
+}
+
+/* END MODEL */
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.nav-pills .nav-item {
+  width: 140px;
+  text-align: center;
+}
+.nav-pills .nav-item .nav-link {
+  border: 1px solid #ccc;
+  border-radius: 0 !important;
+}
+.well {
+  background-color: #eff1f1;
+  /* height: 700px; */
+  width: 100%;
+}
+
+.card {
+  border: none;
+  padding-top: 30px;
+}
+
+.card button:hover:before {
+  /* background:linear-gradient(to right, hsla(72, 16%, 6%, 0.01), blue); */
+  background-position: left bottom;
+}
+
+.card button {
+  border: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: black;
+  outline: none;
+  position: relative;
+  background-image: linear-gradient(to right, #25aae1, #40e495);
+   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.card button:before{
+  content: '';
+  display: block;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left: 0;
+  border-radius: 50px;
+  transition: all .4s;
+}
+
+.header .card {
+  padding: 20px;
+}
