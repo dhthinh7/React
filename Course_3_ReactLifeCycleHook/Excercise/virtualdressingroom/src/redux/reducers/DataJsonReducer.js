@@ -6,15 +6,26 @@ const initialState = {
     tabPanes: []
   },
   showProduct: {
-    background: '../assets/images/background/background1.jpg',
-    shoes: '../assets/images/shoes/shoes1.png'
+    background: {
+      id: 'background_1',
+      type: 'background',
+      img: '../assets/images/background/background1.jpg'
+    },
+    shoes: {
+      id: 'shoes_1',
+      type: 'shoes',
+      imgSrc_png: '../assets/images/shoes/shoes1.png'
+    },
+    background: {
+      imgSrc_png: '../assets/images/background/background1.jpg'
+    }
     // topclothes: '',
     // botclothes: '',
     // shoes: '',
     // handbags: ''
   }
 };
-
+ 
 export const DataJsonReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_DATA_JSON:
@@ -23,14 +34,16 @@ export const DataJsonReducer = (state = initialState, action) => {
       state.dataJson = dataTemp;
       return { ...state, dataJson: dataTemp };
     case GET_PRODUCT:
+      // console.log("action.showProduct", action.showProduct);
       let { navPills } = state.dataJson;
       let { showProduct } = state;
       navPills.map((itemNav) => {
-        return showProduct[itemNav.type] = action.showProduct.type === itemNav.type ? action.showProduct.imgSrc_png : showProduct[itemNav.type]
+        showProduct[itemNav.type] = action.showProduct.type === itemNav.type ? action.showProduct: showProduct[itemNav.type];
+        return {...showProduct};
       })
 
-    console.log("showProductTemp", showProduct);
-    return { ...state, showProduct: showProduct };
+      // console.log("showProductTemp", showProduct.topclothes.id);
+      return { ...state, showProduct: showProduct };
     default:
       return state;
   }

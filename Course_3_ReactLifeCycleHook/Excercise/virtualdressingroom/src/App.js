@@ -11,12 +11,16 @@
 import './App.css';
 import Header from './Component/Header/Header';
 import MainContent from './Component/MainContent/MainContent';
+import MainContentClass from './Component/MainContent/MainContentClass';
 
 function App() {
   return (
     <div className="container-fluid">
       <Header />
+      <h1>React Function Component</h1>
       <MainContent />
+      <h1>React Class Component</h1>
+      <MainContentClass />
     </div>
 
   );

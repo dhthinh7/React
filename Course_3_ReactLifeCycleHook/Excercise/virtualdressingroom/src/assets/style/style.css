@@ -24,14 +24,14 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.card.hovercard {
+/* .card.hovercard {
   position: relative;
   padding-top: 0;
   overflow: hidden;
   text-align: center;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 1);
-}
+} */
 
 /* BEGIN MODEL */
 .contain {
@@ -78,15 +78,16 @@
   z-index: 1;
 }
 
-.handbag {
+.handbags {
   width: 500px;
   height: 1000px;
-  background: url("../../../public/assets/images/handbags/handbag1.png");
+  /* background: url("../../../public/assets/images/handbags/handbag1.png"); */
   position: absolute;
   bottom: -39.5%;
   right: -3.5%;
   transform: scale(0.5);
   z-index: 4;
+  overflow: hidden;
 }
 
 .necklace, .topClothes {
@@ -106,10 +107,10 @@
   /* background: url('../../../public/assets/images/clothes/topcloth1.png'); */
 }
 
-.bottomClothes {
+.botclothes {
   width: 500px;
   height: 1000px;
-  background: url("../../../public/assets/images/clothes/botcloth1.png");
+  /* background: url("../../../public/assets/images/clothes/botcloth1.png"); */
   position: absolute;
   bottom: -40%;
   right: -3.5%;
@@ -119,7 +120,7 @@
 
 .hairstyle {
   width: 1000px;
-  background: url("../../../public/assets/images/hairstyle/hairstyle3.png");
+  /* background: url("../../../public/assets/images/hairstyle/hairstyle3.png"); */
   height: 1000px;
   position: absolute;
   top: -75%;
@@ -131,7 +132,7 @@
 .feet {
   width: 500px;
   height: 1000px;
-  /* background: url("../../../public/assets/images/shoes/shoes1.png"); */
+  background: url("../../../public/assets/images/shoes/shoes1.png");
   position: absolute;
   bottom: -37%;
   right: -3.5%;
@@ -142,7 +143,7 @@
 .background {
   width: 900px;
   height: 1150px;
-  background-image: url(../../../public/assets/images/background/background1.jpg);
+  background-image: url("../../../public/assets/images/background/background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -160,23 +161,36 @@ hr {
   box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
+.nav-pills {
+  background: rgba(214, 224, 226, 0.9)
+
+}
+
 .nav-pills .nav-item {
   width: 140px;
   text-align: center;
+  transition: all .5s ease;
 }
+
+.nav-pills .nav-item:hover{
+  /* background: linear-gradient(to right, #25aae1, #40e495); */
+  background-color: #40e495;
+}
+
 .nav-pills .nav-item .nav-link {
   border: 1px solid #ccc;
   border-radius: 0 !important;
 }
 .well {
-  background-color: #eff1f1;
+  background:rgba(49, 196, 190, 0.75);
   /* height: 700px; */
   width: 100%;
 }
 
 .card {
-  border: none;
-  padding-top: 30px;
+  padding-top: 20px;
+  margin: 10px;
+
 }
 
 .card button:hover:before {
