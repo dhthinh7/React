@@ -12,6 +12,8 @@ export default function Header() {
             <h4 className="card-title text-center">
               CyberLearn - Học lập trình trực tuyến - Dự án thử đồ trực tuyến - Virtual Dressing Room
             </h4>
+            <h5 style={{color: 'red'}}>Hỏi: Phần React class component: Khi dispatch handlePush (nhấn nút) thì có this.props.showProduct nhận được giá trị từ reducer mà sao hàm render không tự động render lại thế? Mentor check giúp em với. Thank you!
+            </h5>
           </div>
         </div>
         <hr />
